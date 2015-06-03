@@ -11,7 +11,7 @@
   "main": "lib/index.js",
   "scripts": {
     "flatsheet": "./bin/flatsheet",
-    "test": "tape test.js",
+    "test": "node test",
     "bundle-css": "rework-npm browser/style.css | myth | cleancss -o public/style.css",
     "watch-css": "gazer -p 'browser/style.css' 'rework-npm browser/style.css | myth > public/style.css'",
     "watch-sheet-edit": "watchify -d browser/sheet.js -o public/sheet.js -g brfs",
@@ -61,6 +61,7 @@
     "extend": "^1.3.0",
     "filter-object": "^1.1.2",
     "flatsheet-api-client": "^2.0.0",
+    "glob": "^5.0.0",
     "handlebars": "~2.0",
     "handlebars-layouts": "^0.3.3",
     "is-my-json-valid": "^2.12.0",
